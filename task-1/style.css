@@ -1,0 +1,224 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #F9FAFB; 
+    color: #4B5563; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-container {
+    display: flex;
+    height: 100px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.logo h1 {
+    color: #6366F1; 
+    font-size: 28px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+    font-size: 18px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #1F2937; 
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #6366F1; 
+}
+
+.hero-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.heading h1 {
+    font-size: 36px;
+    color: #1F2937; 
+    margin-bottom: 30px;
+}
+
+.paragraph p {
+    font-size: 20px;
+    color: #4B5563;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.button {
+    margin: 50px auto 0;
+    display: block;
+    width: 220px;
+    height: 60px;
+    background-color: #6366F1;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background-color: #4F46E5; 
+    transform: translateY(-2px);
+}
+
+footer {
+    background-color: #E5E7EB; 
+    color: #1F2937;
+    height: 70px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Mobile menu styles */
+.nav-container-mobile {
+    display: none;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.nav-container-mobile .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-toggle {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+}
+
+.nav-links-mobile {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.nav-links-mobile a {
+    text-decoration: none;
+    color: #1F2937;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links-mobile a:hover {
+    color: #6366F1;
+}
+
+.nav-links-mobile.open {
+    display: flex;
+}
+
+.piano-logo {
+    height: 50px;
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    .nav-container {
+        display: none;
+    }
+
+    .piano-logo {
+        height: 40px;
+    }
+
+    .nav-container-mobile {
+        display: flex;
+    }
+
+    .hero-section {
+        min-height: 100%;
+    }
+
+    .heading h1 {
+        font-size: 24px;
+        padding: 20px;
+    }
+
+    .paragraph p {
+        font-size: 16px;
+        margin: 10px 20px;
+    }
+
+    .button {
+        width: 80%;
+        font-size: 16px;
+    }
+
+    body > footer {
+        position: static;
+        margin-top: auto;
+        font-size: 10px;
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .nav-container {
+        padding: 0 30px;
+    }
+
+    .nav-links {
+        gap: 20px;
+        font-size: 16px;
+    }
+
+    .hero-section {
+        padding: 40px 20px;
+    }
+
+    .heading h1 {
+        font-size: 28px;
+    }
+
+    .paragraph p {
+        font-size: 18px;
+        padding: 0 10px;
+    }
+
+    .button {
+        width: 60%;
+        font-size: 17px;
+    }
+
+    footer {
+        font-size: 14px;
+        height: auto;
+        padding: 20px 10px;
+        position: absolute;
+        bottom:0;
+    }
+}

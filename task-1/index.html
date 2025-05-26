@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Landing page</title>
+</head>
+<body>
+    <div class="nav-container">
+        <div class="logo">
+            <img class="piano-logo" src="./image.png" alt="">
+        </div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Product</a>
+            <a href="#">Portfolio</a>
+            <a href="#">About us</a>
+            <a href="#">Contact us</a>
+        </div>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="nav-container-mobile">
+        <div class="logo">
+            <img class="piano-logo" src="./image.png" alt="">
+            <img src="./menu-line.svg" alt="Menu" class="menu-toggle">
+        </div>
+        <div class="nav-links-mobile" id="mobileMenu">
+            <a href="#">Home</a>
+            <a href="#">Product</a>
+            <a href="#">Portfolio</a>
+            <a href="#">About us</a>
+            <a href="#">Contact us</a>
+        </div>
+    </div>
+
+    <div class="hero-section">
+        <div class="heading">
+            <h1>Unleash Your Musical Talent With Expert Guidance</h1>
+        </div>
+        <div class="paragraph">
+            <p>
+Discover the joy of music with our professional classes designed for all ages and skill levels. Whether you're a beginner looking to learn your first instrument or an experienced musician aiming to refine your technique, our experienced instructors provide personalized lessons in a fun, supportive environment. From guitar and piano to vocals and drums, we help you grow your skills and confidence. Join us and start your musical journey today!
+</p>
+        </div>
+        <button class="button">Get Started!</button>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <h3>Instagram | Linkedin | Youtube | Twitter</h3>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
